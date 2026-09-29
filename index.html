@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        ResolveAI — Persistent Memory Customer Support
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= TOP NAVBAR ================= -->
+
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ↻
+            </div>
+
+            <div>
+
+                <h1>
+                    ResolveAI
+                </h1>
+
+                <span>
+                    Persistent-Memory Support Agent
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="nav-links">
+
+            <a href="#dashboard">
+                Dashboard
+            </a>
+
+            <a href="#conversation">
+                Conversation
+            </a>
+
+            <a href="#memory">
+                Memory
+            </a>
+
+            <a href="#learning">
+                Learning
+            </a>
+
+        </nav>
+
+
+        <div
+            class="connection-status"
+            id="connectionStatus"
+        >
+
+            <span class="status-dot"></span>
+
+            <span id="connectionText">
+                Checking backend...
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section
+        class="hero"
+        id="dashboard"
+    >
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                🧠 HINDSIGHT-POWERED AI
+            </div>
+
+
+            <h2>
+
+                Resolve complaints.
+
+                <span>
+                    Remember customers.
+                </span>
+
+                Improve every interaction.
+
+            </h2>
+
+
+            <p>
+
+                ResolveAI uses persistent memory to understand customer history,
+                remember previous interactions, and provide more personalized
+                support every time a customer returns.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button
+                    class="primary-btn"
+                    id="startComplaintBtn"
+                >
+                    ✨ Resolve Complaint
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    id="memoryBtn"
+                >
+                    🧠 Explore Memory
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MEMORY LOOP -->
+
+        <div class="memory-loop">
+
+            <div class="loop-title">
+
+                <span></span>
+
+                MEMORY LEARNING LOOP
+
+            </div>
+
+
+            <div class="loop">
+
+                <div class="loop-item">
+
+                    <strong>
+                        01
+                    </strong>
+
+                    <b>
+                        Remember
+                    </b>
+
+                    <small>
+                        Store interaction
+                    </small>
+
+                </div>
+
+
+                <div class="loop-arrow">
+                    →
+                </div>
+
+
+                <div class="loop-item">
+
+                    <strong>
+                        02
+                    </strong>
+
+                    <b>
+                        Reason
+                    </b>
+
+                    <small>
+                        Understand context
+                    </small>
+
+                </div>
+
+
+                <div class="loop-arrow">
+                    →
+                </div>
+
+
+                <div class="loop-item">
+
+                    <strong>
+                        03
+                    </strong>
+
+                    <b>
+                        Respond
+                    </b>
+
+                    <small>
+                        Personalize reply
+                    </small>
+
+                </div>
+
+
+                <div class="loop-arrow">
+                    →
+                </div>
+
+
+                <div class="loop-item">
+
+                    <strong>
+                        04
+                    </strong>
+
+                    <b>
+                        Learn
+                    </b>
+
+                    <small>
+                        Update memory
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CUSTOMER PROFILE ================= -->
+
+    <section class="customer-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    ACTIVE CUSTOMER
+                </span>
+
+                <h2>
+                    Customer Profile
+                </h2>
+
+            </div>
+
+
+            <span class="active-badge">
+                ● Active Case
+            </span>
+
+        </div>
+
+
+
+        <div class="customer-card">
+
+
+            <div
+                class="customer-avatar"
+                id="customerAvatar"
+            >
+                JD
+            </div>
+
+
+
+            <div class="customer-info">
+
+                <h3 id="customerName">
+                    Jordan Davis
+                </h3>
+
+
+                <p>
+
+                    Customer ID:
+
+                    <strong id="customerId">
+                        RA-2048
+                    </strong>
+
+                </p>
+
+
+                <!-- CUSTOMER CONTROLS -->
+
+                <div
+                    style="
+                        margin-top: 10px;
+                        display: flex;
+                        gap: 8px;
+                        flex-wrap: wrap;
+                    "
+                >
+
+                    <button
+                        id="switchCustomerBtn"
+                        class="secondary-btn"
+                        style="
+                            padding: 8px 14px;
+                            font-size: 12px;
+                        "
+                    >
+                        Switch Customer
+                    </button>
+
+
+                    <button
+                        id="addCustomerBtn"
+                        class="primary-btn"
+                        style="
+                            padding: 8px 14px;
+                            font-size: 12px;
+                        "
+                    >
+                        + Add Customer
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="customer-stat">
+
+                <span>
+                    Interactions
+                </span>
+
+                <strong id="interactionCount">
+                    3
+                </strong>
+
+            </div>
+
+
+
+            <div class="customer-stat">
+
+                <span>
+                    Memory Status
+                </span>
+
+                <strong class="memory-active">
+                    ● Active
+                </strong>
+
+            </div>
+
+
+
+            <div class="customer-stat">
+
+                <span>
+                    Support Status
+                </span>
+
+                <strong>
+                    In Progress
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MAIN WORKSPACE ================= -->
+
+    <main class="workspace">
+
+
+        <!-- ================= CHAT ================= -->
+
+        <section
+            class="chat-panel"
+            id="conversation"
+        >
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="section-label">
+                        CUSTOMER SUPPORT
+                    </span>
+
+                    <h2>
+                        Conversation
+                    </h2>
+
+                </div>
+
+
+                <div class="ai-status">
+
+                    <span></span>
+
+                    AI Agent Online
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="chat-messages"
+                id="chatMessages"
+            >
+
+                <!-- CUSTOMER MESSAGE -->
+
+                <div class="message customer-message">
+
+                    <div class="message-avatar">
+                        JD
+                    </div>
+
+
+                    <div class="message-content">
+
+                        <div class="message-meta">
+
+                            <strong>
+                                Jordan Davis
+                            </strong>
+
+                            <span>
+                                Today
+                            </span>
+
+                        </div>
+
+
+                        <div class="message-bubble">
+
+                            My headphones arrived damaged.
+                            I want a replacement.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- AI MESSAGE -->
+
+                <div class="message ai-message">
+
+                    <div class="message-avatar ai-avatar">
+                        ✦
+                    </div>
+
+
+                    <div class="message-content">
+
+                        <div class="message-meta">
+
+                            <strong>
+                                ResolveAI
+                            </strong>
+
+                            <span>
+                                AI Agent
+                            </span>
+
+                        </div>
+
+
+                        <div class="message-bubble">
+
+                            I’m sorry your headphones arrived damaged.
+                            I’ve recorded your replacement request and
+                            will use this context if you contact us again.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MEMORY NOTICE -->
+
+                <div class="memory-notice">
+
+                    <span class="memory-icon">
+                        🧠
+                    </span>
+
+
+                    <div>
+
+                        <strong>
+                            Memory updated
+                        </strong>
+
+
+                        <p>
+
+                            Hindsight stored the customer's complaint
+                            and replacement request.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CHAT INPUT -->
+
+            <div class="chat-input-area">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Describe your complaint..."
+                    rows="2"
+                ></textarea>
+
+
+                <button
+                    id="sendBtn"
+                    class="send-btn"
+                >
+
+                    <span>
+                        Send
+                    </span>
+
+                    <span>
+                        ➤
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <div class="input-hint">
+
+                Press <strong>Enter</strong> to send ·
+
+                <strong>
+                    Shift + Enter
+                </strong>
+
+                for a new line
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MEMORY PANEL ================= -->
+
+        <aside
+            class="memory-panel"
+            id="memory"
+        >
+
+            <div class="panel-header">
+
+                <div>
+
+                    <span class="section-label">
+                        HINDSIGHT
+                    </span>
+
+                    <h2>
+                        Customer Memory
+                    </h2>
+
+                </div>
+
+
+                <div class="memory-pulse">
+                    ●
+                </div>
+
+            </div>
+
+
+
+            <!-- CUSTOMER MEMORY -->
+
+            <div class="memory-card">
+
+                <div class="memory-card-title">
+
+                    <span>
+                        👤
+                    </span>
+
+                    Customer
+
+                </div>
+
+
+                <strong id="memoryCustomerName">
+                    Jordan Davis
+                </strong>
+
+
+                <small id="memoryCustomerId">
+                    RA-2048
+                </small>
+
+            </div>
+
+
+
+            <!-- PREVIOUS ISSUE -->
+
+            <div class="memory-card">
+
+                <div class="memory-card-title">
+
+                    <span>
+                        ⚠️
+                    </span>
+
+                    Previous Issue
+
+                </div>
+
+
+                <p id="previousIssue">
+
+                    Wireless headphones arrived damaged.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- PREVIOUS ACTION -->
+
+            <div class="memory-card">
+
+                <div class="memory-card-title">
+
+                    <span>
+                        🔄
+                    </span>
+
+                    Previous Action
+
+                </div>
+
+
+                <p id="previousAction">
+
+                    Replacement requested.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- CUSTOMER PREFERENCE -->
+
+            <div class="memory-card preference-card">
+
+                <div class="memory-card-title">
+
+                    <span>
+                        ⭐
+                    </span>
+
+                    Learned Preference
+
+                </div>
+
+
+                <p id="customerPreference">
+
+                    Customer prefers quick resolutions
+                    and may prefer a refund over another replacement.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- MEMORY COUNT -->
+
+            <div class="memory-count-card">
+
+                <div class="memory-count-icon">
+                    🧠
+                </div>
+
+
+                <div>
+
+                    <strong id="memoryCount">
+                        3
+                    </strong>
+
+
+                    <span>
+                        memories connected
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="memory-footer">
+
+                <span class="pulse-dot"></span>
+
+                Hindsight memory active
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- ================= LEARNING SECTION ================= -->
+
+    <section
+        class="learning-section"
+        id="learning"
+    >
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    CONTINUOUS IMPROVEMENT
+                </span>
+
+                <h2>
+                    What ResolveAI Has Learned
+                </h2>
+
+            </div>
+
+
+            <span class="learning-badge">
+                ✦ Learning Active
+            </span>
+
+        </div>
+
+
+
+        <div class="learning-grid">
+
+
+            <div class="learning-card">
+
+                <div class="learning-icon">
+                    🧠
+                </div>
+
+
+                <div>
+
+                    <span>
+                        MEMORY
+                    </span>
+
+
+                    <strong id="learningInteractionText">
+                        3 Interactions
+                    </strong>
+
+
+                    <p>
+                        Previous customer conversations
+                        are connected.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="learning-icon">
+                    🔄
+                </div>
+
+
+                <div>
+
+                    <span>
+                        CONTEXT
+                    </span>
+
+
+                    <strong>
+                        Complaint History
+                    </strong>
+
+
+                    <p>
+                        The customer's previous case
+                        is remembered.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="learning-icon">
+                    ⭐
+                </div>
+
+
+                <div>
+
+                    <span>
+                        PREFERENCE
+                    </span>
+
+
+                    <strong>
+                        Adaptive Preference
+                    </strong>
+
+
+                    <p>
+                        The agent adapts to the customer's
+                        latest preference.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="learning-card">
+
+                <div class="learning-icon">
+                    ⚡
+                </div>
+
+
+                <div>
+
+                    <span>
+                        PERSONALIZATION
+                    </span>
+
+
+                    <strong>
+                        Faster Resolution
+                    </strong>
+
+
+                    <p>
+                        Customers don't need to repeat
+                        their previous story.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= DEMO TIMELINE ================= -->
+
+    <section class="timeline-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    MEMORY IN ACTION
+                </span>
+
+                <h2>
+                    Customer Journey
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item active">
+
+                <div class="timeline-number">
+                    01
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Initial Complaint
+                    </strong>
+
+
+                    <p>
+                        Customer reports a problem.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-line"></div>
+
+
+
+            <div class="timeline-item active">
+
+                <div class="timeline-number">
+                    02
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Memory Retained
+                    </strong>
+
+
+                    <p>
+                        Hindsight stores the complaint
+                        and important customer context.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-line"></div>
+
+
+
+            <div class="timeline-item active">
+
+                <div class="timeline-number">
+                    03
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Returning Customer
+                    </strong>
+
+
+                    <p>
+                        Agent recalls the customer's
+                        previous interaction.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-line"></div>
+
+
+
+            <div class="timeline-item active">
+
+                <div class="timeline-number">
+                    04
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Personalized Resolution
+                    </strong>
+
+
+                    <p>
+                        Agent adapts to the customer's
+                        updated preference.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            🔄
+
+            <strong>
+                ResolveAI
+            </strong>
+
+        </div>
+
+
+        <p>
+            Persistent-memory AI for better customer support.
+        </p>
+
+
+        <div class="footer-tech">
+
+            <span>
+                Groq
+            </span>
+
+            <span>
+                Hindsight
+            </span>
+
+            <span>
+                FastAPI
+            </span>
+
+            <span>
+                AI Agent
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="config.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
